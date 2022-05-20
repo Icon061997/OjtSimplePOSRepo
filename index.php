@@ -23,7 +23,7 @@
 
 <body>
 
-    <div class="contain">
+    <div class="contains">
         <div class="container_box">
 
         <form action="main.php" method="">
