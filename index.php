@@ -29,7 +29,7 @@
         <form action="main.php" method="">
             <div class="content-box">
                 <div class="container">
-                <img src="image/logo.jpg" alt="Flowers in Chania" class="img-box">
+                <img src="image/logo2.png" alt="Flowers in Chania" class="img-box">
                 <p style="margin-top: 10px;"><b><i>simplePos</i></b>Admin</p>
                 <hr>
                 </div>
