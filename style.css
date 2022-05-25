@@ -1,32 +1,30 @@
-*{
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-
 body {
-    background-color: antiquewhite;
-    overflow: hidden;
     margin: 0;
-    min-height: 90vh;
-    justify-items: center;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     justify-content: center;
-   
-
+    align-items: center;
+    background-color: #1f3040;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
-    .contains{
 
-        align-items: center;
-        justify-content: center;
-        margin-top: 10%;
-
-
-    }
-
+form {
+    height: fit-content;
+    width: fit-content;
+    background: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
+}
 
 .container_box {
-
+    justify-content: center;
     align-items: center;
     display: flex;
     align-content: center;
@@ -34,79 +32,77 @@ body {
 
 }
 
-.content-box {
-
-    width: fit-content;
-    height:fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px 0px rgb(138, 135, 135);
-    background: linear-gradient(180deg, rgba(48, 182, 254, 0.87) 0%, rgba(57, 167, 245, 0.75) 15.05%, rgba(255, 255, 255, 0.76) 100%);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    border-left: none;
-    border-bottom: none;
-
-}
-
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-}
-
-.buttons {
-    
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    outline: none;
-    background-color: green;
-    color: white;
-}
-
-
-.input-box{
-
-    height: 40px;
-    width: 100%;
-    border-radius: 10px;
-    outline: none;
-    border: 2px solid rgb(112, 112, 112);
-
-}
-
-.img-box{
+.img-box {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border-color: black;
-    border: 2px solid black;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 4px solid #1f3040;
     margin-top: 50px;
 }
 
 
-input.buttons:hover{
+
+.input-fields {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.input-fields input {
+    width: 100%;
+    height: 100%;
+    outline: 1.4px solid black;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.input-fields input:focus {
+    outline: 2px solid #1f3040;
     
-    background-color: #01ac43;
-    border-radius: 10px;
-    text-emphasis-color: black;
 }
 
-input.input-box:hover{
-    background-color: #e9eeef;
-    border-radius: 10px;
-    text-emphasis-color: black;
-
-}
-input.input-box:focus{
-    border-radius: 10px;
-    border-bottom-color: rgba(219, 0, 0, 0.958);
+.input-fields input:focus+label {
+    top: -10px;
+    color: #1f3040;
+    font-size: 12px;
 }
 
 
+
+.input-fields label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 18px;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: top .2s;
+    background-color: white;
+    color: rgb(99, 99, 99);
+}
+
+.input-fields span {
+    position: absolute;
+    top: 15px;
+    left: 400px;
+}
+
+#btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #1f3040;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
