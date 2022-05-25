@@ -12,7 +12,6 @@
     <!-- sweet allert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- ccss file -->
-    <link href="style.css" rel="stylesheet">
     <link href="navbar.css" rel="stylesheet">
     <!-- fa fa icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
