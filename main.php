@@ -124,6 +124,44 @@
                         </div>
                     </div>
 
+                    <div class="row">
+
+<div class="col-md-12 col-lg-6 col-sm-12">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 my-3">
+            <div class="card-container">
+                <h3 class="">Top Items by Sales</h3>
+                <div class="table-responsive table-fixed" style="height: 250px;overflow: scroll; ">
+                    <table class="table table-hover table-striped table-fixed table-scroll" id="data-table">
+                        <thead class="thead-box">
+                            <tr>
+                                <th>No</th>
+                                <th>Item</th>
+                                <th>Sales</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+
+                                <td>1</td>
+                                <td>Umbrella</td>
+                                <td>200</td>
+
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
                 </div>
 
 

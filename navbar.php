@@ -12,7 +12,7 @@
     <!-- sweet allert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- ccss file -->
-    
+
     <link href="navbar.css" rel="stylesheet">
     <!-- fa fa icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -56,7 +56,15 @@
             margin-right: 10px;
         }
 
-        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
     </style>
 
 
@@ -79,12 +87,12 @@
                     </div>
                     <div class="dropdown_div" style="float: right;">
                         <button class="downdrop_button" onclick="dropbtn()">
-                                <img class="imgs" src="image/logo2.phg" alt="logo" width="45px" height="45px">
-                                <div style="padding: 5px;">
-                                    <h5> Jimuel Leal</h5>
-                                </div>
+                            <img class="imgs" src="image/logo2.phg" alt="logo" width="45px" height="45px">
+                            <div style="padding: 5px;">
+                                <h5> Jimuel Leal</h5>
+                            </div>
 
-                                <i class="fa fa-chevron-down" style="font-size:15px"></i>
+                            <i class="fa fa-chevron-down" style="font-size:15px"></i>
                         </button>
 
                         <div class="dropdown_content" id="dd_btn">
@@ -107,7 +115,7 @@
                         <a href="reports.php"><i class=" fa fa-file"></i> Reports</a>
                         <a href="items.php"><i class=" fa fa-cog"></i>items</a>
                         <a href="categories.php"><i class=" fa fa-cog"></i>Categories</a>
-                        <a href="#"><i class=" fa fa-Users"></i>Co  stumers</a>
+                        <a href="#"><i class=" fa fa-Users"></i>Co stumers</a>
                         <a href="#"><i class=" fa fa-cog"></i>Supliers</a>
                         <a href="#"><i class=" fa fa-cog"></i>Settings</a>
 
@@ -120,30 +128,31 @@
 
 
     <script>
-            function dropbtn() {
-                document.getElementById("dd_btn").classList.toggle("show");
-            }
+        function dropbtn() {
+            document.getElementById("dd_btn").classList.toggle("show");
+        }
 
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-                if (!event.target.matches('.downdrop_button')) {
-                    var dropdowns = document.getElementsByClassName("dropdown_content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.downdrop_button')) {
+                var dropdowns = document.getElementsByClassName("dropdown_content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
                     }
                 }
             }
+        }
 
 
-            function togglemenu() {
-                document.getElementById('side_bar').classList.toggle('active');
-                document.getElementById("main").style.marginLeft = "250px";
-            }
-        </script>
+        function togglemenu() {
+            document.getElementById('side_bar').classList.toggle('active');
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+    </script>
 
 </body>
+
 </html>
