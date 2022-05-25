@@ -31,7 +31,7 @@
             <form action="main.php">
 
                 <div class="container">
-                    <img src="images/logo.png" alt="" class="img-box">
+                    <img src="images/logo2.png" alt="" class="img-box">
                 </div>
                 <h4 style="margin-top: 10px;"><b style="color: #1f3040;
                     ;">Ez</b><b style="color: #1f3040;">Shop </b></b>Admin
