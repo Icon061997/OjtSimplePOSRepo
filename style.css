@@ -106,3 +106,108 @@ form {
     cursor: pointer;
     margin-bottom: 20px;
 }
+
+*{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+body {
+    background-color: antiquewhite;
+    overflow: hidden;
+    margin: 0;
+    min-height: 90vh;
+    justify-items: center;
+    justify-content: center;
+   
+
+}
+
+
+.container_box {
+
+    align-items: center;
+    display: flex;
+    align-content: center;
+    text-align: center;
+
+}
+
+.content-box {
+
+    width: fit-content;
+    height:fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px rgb(138, 135, 135);
+    background: linear-gradient(180deg, rgba(48, 182, 254, 0.87) 0%, rgba(57, 167, 245, 0.75) 15.05%, rgba(255, 255, 255, 0.76) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.buttons {
+    
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    background-color: green;
+    color: white;
+}
+
+
+.input-box{
+
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgb(112, 112, 112);
+
+}
+
+.img-box{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-color: black;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+
+
+input.buttons:hover{
+    
+    background-color: #01ac43;
+    border-radius: 10px;
+    text-emphasis-color: black;
+}
+
+input.input-box:hover{
+    background-color: #e9eeef;
+    border-radius: 10px;
+    text-emphasis-color: black;
+
+}
+input.input-box:focus{
+    border-radius: 10px;
+    border-bottom-color: rgba(219, 0, 0, 0.958);
+}
+
+
