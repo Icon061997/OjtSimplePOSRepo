@@ -121,7 +121,7 @@ button:hover {
 
 
 #side_bar {
-    position: absolute;
+    position: sticky;
     padding-top: 50px;
     margin-top: 42.5px;
     height: 100%;
