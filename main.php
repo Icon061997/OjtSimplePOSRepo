@@ -22,7 +22,7 @@
 <body>
     <?php include 'navbar.php' ?>
 
-    <div class="main-container" style="overflow-y:scroll;">
+    <div class="container" style="overflow-y:scroll;">
 
         <div class="d-flex" id="wrapper">
 
