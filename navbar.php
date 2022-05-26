@@ -55,30 +55,18 @@
         i {
             margin-right: 10px;
         }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-
-        .sticky+.content {
-            padding-top: 60px;
-        }
     </style>
-
-
 
 <body>
     <!-- TOP NAVBAR -->
     <header>
-        <div class="container-wrapper">
+        <div class="wrapper">
             <div class="navbar">
                 <div class="nav_bar">
                     <div class="toggle_btn">
-                        <button id="btn_toggle" onclick="togglemenu()"><img src="image/bar_icon.png" alt="icon" width="30px" height="30px;"></button>
+                        <button id="btn_toggle" onclick="togglemenu()"><img src="image/humberger2.png" alt="icon" width="40px" height="40px;"></button>
                         <!-- DROPDOWN -->
-                        <img class="imgs" src="image/logo2.png" alt="logo" width="60px" height="60px" style="margin-left: 120px;">
+                        <img class="imgs" src="image/logo.png" alt="logo" width="60px" height="60px" style="margin-left: 120px;">
 
 
                     </div>
@@ -87,7 +75,7 @@
                     </div>
                     <div class="dropdown_div" style="float: right;">
                         <button class="downdrop_button" onclick="dropbtn()">
-                            <img class="imgs" src="image/logo2.phg" alt="logo" width="45px" height="45px">
+                            <img class="imgs" src="image/user2.png" alt="logo" width="45px" height="45px">
                             <div style="padding: 5px;">
                                 <h5> Jimuel Leal</h5>
                             </div>
@@ -151,7 +139,21 @@
             document.getElementById('side_bar').classList.toggle('active');
             document.getElementById("main").style.marginLeft = "250px";
         }
+
+
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
     </script>
+
+
+
 
 </body>
 
