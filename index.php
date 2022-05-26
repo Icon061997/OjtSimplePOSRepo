@@ -21,7 +21,7 @@
             border-left: none;
         }
 
-        body {
+        /* body {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -129,7 +129,7 @@ form {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 20px;
-}
+} */
 
 
     </style>
